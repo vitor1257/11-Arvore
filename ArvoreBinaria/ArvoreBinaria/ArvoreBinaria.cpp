@@ -1,3 +1,4 @@
+// Vitor Castro Dias //
 #include <iostream>
 using namespace std;
 
@@ -179,8 +180,19 @@ void exibirElementosArvore(NO* no)
 
 void buscarElementoArvore(NO* no, int valor)
 {
-
-
+	if (no == NULL){
+		cout << "Valor inexistente";		
+	}
+	else if (valor == no->valor) {
+		cout << "Valor encontrado";
+	}
+	else if (valor > no->valor) {
+		buscarElementoArvore(no->dir,valor);
+	}
+	else {
+		buscarElementoArvore(no->esq, valor);
+	}
+	 
 }
 
 
