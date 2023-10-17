@@ -178,7 +178,7 @@ void exibirElementosArvore(NO* no)
 
 }
 
-void buscarElementoArvore(NO* no, int valor)
+void buscarElementoArvore(NO* no, int valor) 
 {
 	if (no == NULL){
 		cout << "Valor inexistente";		
